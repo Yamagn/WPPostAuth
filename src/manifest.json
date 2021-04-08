@@ -1,0 +1,13 @@
+{
+    "name": "WPPostAuth",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "WordPressの投稿に生体認証を用いることができるようになる拡張です。",
+    "default_locale": "ja_JP",
+    "content_scripts": [{
+      "matches": ["https://{subdomain}.cybozu.com/k/{AppID}/*"],
+      "js": [
+        "content.js"
+      ]
+    }]
+  }
